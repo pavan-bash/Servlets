@@ -1,0 +1,16 @@
+<html>
+  <body bgcolor=green text=white>
+     <form action="student.com" method="post">
+	 <h1 align=center> Register  Page </h1>
+	 <hr><br><br>
+	     <pre>
+		    <h2>
+			Enter Fname : <input type=text name=FNAME>
+			Enter LName : <input type=text name=LNAME>
+			Enter age : <input type=text name=AGE>
+			<input type=submit value=register>
+			</h2>
+		 </pre>
+	 </form>
+  </body>
+</html>

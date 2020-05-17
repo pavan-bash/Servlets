@@ -1,0 +1,18 @@
+<web-app>
+<servlet>
+   <servlet-name>F</servlet-name>
+   <servlet-class>StudentServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>F</servlet-name>
+  <url-pattern>/student.com</url-pattern>
+</servlet-mapping>
+<filter>
+   <filter-name>S</filter-name>
+   <filter-class>ValidateServlet</filter-class>
+</filter>
+<filter-mapping>
+   <filter-name>S</filter-name>
+   <url-pattern>/student.com</url-pattern>
+</filter-mapping>
+</web-app>

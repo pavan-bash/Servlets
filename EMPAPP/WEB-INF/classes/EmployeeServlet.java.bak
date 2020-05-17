@@ -1,0 +1,45 @@
+
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+
+public class EmployeeServlet extends HttpServlet{
+	public void doPost(HttpServletRequest request,HttpServletResponse response) throws ServletException,IOException{
+
+		PrintWriter out=response.getWriter();
+		response.setContentType("text/html");
+ 
+        //Req.g.p.logic(ENO | ENAME | ECITY)
+		String eno=request.getParameter("ENO");
+		String ename=
+			request.getParameter("ENAME");
+		String ecity=request.getParameter("ECITY");
+
+		//Create Cookies
+		Cookie ceno=new Cookie("ENO",eno);
+		Cookie cename=new Cookie("ENAME",ename);
+		Cookie cecity=new Cookie("ECITY",ecity);
+
+		//Display Dynamic Page
+		out.print("<body bgcolor=green text=white>");
+		   out.print("<form action=display.com method=post>");
+		     out.print("<h1 align=center> EOInfo Page </h1><hr><br><br>");
+
+			 out.print("<table align=center>");
+			     
+				 out.print("<tr><td><h2> Desig : </h2> </td><td><input type=text name=DESIG></td></tr>");
+
+				 out.print("<tr><td><h2> Exp : </h2></td><td><input type=text name=EXP></td></tr>");
+
+				 out.print("<tr><td><h2> Salary : </td><td><input type=text name=SALARY></td></tr>");
+
+				 out.print("<tr><td></td><td><input type=submit value=submit></td></tr>");
+
+			 out.print("</table>");
+
+		   out.print("</form>");
+		out.print("</body>");
+
+		out.close();
+	}
+}

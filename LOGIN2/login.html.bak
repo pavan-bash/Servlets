@@ -1,0 +1,25 @@
+<html>
+   <body bgcolor="green" text="white">
+   <form action="login.com" method="post">
+      <br>
+      <h1 align=center> SSSIT Computer Education 
+	  <br> Student Login </h1>
+	  <hr size="4" color="white">
+	  <br><br>
+	  
+	  <table border="0" align="center">
+	     <tr><td><h2>Enter Username : </td>
+		        <td><input type="text" name="USERNAME"></td></tr>
+
+		 <tr><td><h2>Enter Password :</td>
+		        <td><input type="password" name="PASSWORD"></td></tr>
+
+		 <tr><td align="right">
+		 <input type="submit" value="Login"></td>
+		  <td><input type="reset" value="Clear"></td></tr>
+	  </table>
+	  
+	  </form>
+   </body>
+</html>
+

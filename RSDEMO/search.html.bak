@@ -1,0 +1,12 @@
+<body bgcolor=green text=white>
+   <form action=search.com method=post>
+   <h1 align=center>
+     <hr>
+	  <table align=center >
+	    <tr><td><h2>Enter Keyword</h2></td>
+		      <td><input type=text name=KEYWORD></td><td>
+			  <input type=submit value=search></td></tr>
+	  </table>
+   </h1>
+     </form>
+</body>

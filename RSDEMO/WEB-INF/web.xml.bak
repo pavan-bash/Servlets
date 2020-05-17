@@ -1,0 +1,11 @@
+<web-app>
+   <servlet>
+      <servlet-name>F</servlet-name>
+	  <servlet-class>SearchServlet</servlet-class>
+	  <load-on-startup>1</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>F</servlet-name>
+	  <url-pattern>/search.com</url-pattern>
+   </servlet-mapping>
+ </web-app>

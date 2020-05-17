@@ -1,0 +1,23 @@
+<web-app>
+ <welcome-file-list>
+    <welcome-file>sa.com</welcome-file>
+ </welcome-file-list>
+   <servlet>
+      <servlet-name>F</servlet-name>
+	  <servlet-class>SaServlet</servlet-class>
+	  <load-on-startup>1</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>F</servlet-name>
+	  <url-pattern>/sa.com</url-pattern>
+   </servlet-mapping>
+   <servlet>
+      <servlet-name>S</servlet-name>
+	  <servlet-class>SbServlet</servlet-class>
+	  	  <load-on-startup>2</load-on-startup>
+   </servlet>
+   <servlet-mapping>
+      <servlet-name>S</servlet-name>
+	  <url-pattern>/sb.com</url-pattern>
+   </servlet-mapping>
+</web-app>

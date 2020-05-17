@@ -1,0 +1,23 @@
+<web-app>
+  <welcome-file-list>
+     <welcome-file>home.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+     <servlet-name>F</servlet-name>
+	 <servlet-class>EmployeeServlet</servlet-class>
+	 <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>F</servlet-name>
+	 <url-pattern>/employee.com</url-pattern>  
+  </servlet-mapping>
+  <servlet>
+     <servlet-name>S</servlet-name>
+	 <servlet-class>DisplayServlet</servlet-class>
+	 <load-on-startup>2</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name>S</servlet-name>
+	 <url-pattern>/display.com</url-pattern>  
+  </servlet-mapping>
+</web-app>

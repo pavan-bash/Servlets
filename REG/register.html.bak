@@ -1,0 +1,24 @@
+<HTML>
+  <body bgcolor=yellow text=red>
+  <form action="register.com" method="post">
+     <h1 align=center> Register Application </h1>
+	 <hr><br><br>
+
+	 <table align=center>
+        <tr><td><h2>Enter Dno :</td>
+		       <td><input type=text name=DNO></td>
+		</tr>
+		<tr><td><h2>Enter Dname :</td>
+		       <td><input type=text name=DNAME></td>
+		</tr>
+	 <tr><td><h2>Enter DLoc :</td>
+		       <td><input type=text name=DLOC></td>
+		</tr>
+
+		<tr><td></td>
+		       <td><input type=submit value="Register"></td>
+		</tr>	 
+	 
+	 </table>
+  </body>
+</HTML>

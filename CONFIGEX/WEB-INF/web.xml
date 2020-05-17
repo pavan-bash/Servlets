@@ -1,0 +1,30 @@
+<web-app>
+   <servlet>
+  <servlet-name>SD</servlet-name>
+  <servlet-class>ConfigDemoServlet</servlet-class>
+  <init-param>
+     <param-name>DRIVER</param-name>
+	 <param-value>oracle.jdbc.driver.OracleDriver</param-value>
+  </init-param>
+    <init-param>
+     <param-name>URL</param-name>
+	 <param-value>jdbc:oracle:thin:@localhost:1521:orcl</param-value>
+  </init-param>
+      <init-param>
+     <param-name>USERNAME</param-name>
+	 <param-value>scott</param-value>
+  </init-param>
+      <init-param>
+     <param-name>PASSWORD</param-name>
+	 <param-value>Manager</param-value>
+  </init-param>
+      <init-param>
+     <param-name>TABLE</param-name>
+	 <param-value>emp</param-value>
+  </init-param>
+   </servlet>
+   <servlet-mapping>
+   <servlet-name>SD</servlet-name>
+   <url-pattern>/config.com</url-pattern>
+   </servlet-mapping>
+</web-app>

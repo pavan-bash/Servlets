@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <link rel='stylesheet' type='text/css' href='src/dbms.css'>
+  <title>Exchange Board</title>
+ </head>
+ <body>
+
+	<h1 align="center">EXCHANGE BOARD</h1><br>
+	<hr><br>
+	<h3 align="center">Select any attribute from the following</h3>
+	
+	<div>
+	
+	<button onclick="dynamic('name')">NAME</button><br>
+	<form action="index.com" method="post">
+	<p id="name"></p><br>
+	</form>
+	
+	<button onclick="dynamic('dmat_ac_no')">DMAT ACCOUNT NUMBER</button><br>
+	<form action="index.com" method="post">
+	<p id="dmat_ac_no"></p><br>
+	</form>
+	<button onclick="dynamic('pan')">PAN</button><br>
+	<form action="index.com" method="post">
+	<p id="pan"></p><br>
+	</form>
+	
+	<button onclick="dynamic('share_id')">SHARE ID</button><br>
+	<form action="index.com" method="post">
+	<p id="share_id"></p><br>
+	</form>
+	
+	<button onclick="dynamic('company')">COMPANY NAME</button>
+	<form action="index.com" method="post">
+	<p id="company"></p><br>
+	</form>
+	
+	<div>
+
+	<script>
+	function dynamic(attr){
+		if (attr=="name")
+		{
+				document.getElementById(attr).innerHTML = "<input type='text' name='name'>&nbsp;&nbsp;<button>SUBMIT</button>";
+				document.getElementById("dmat_ac_no").innerHTML = "";
+				document.getElementById("pan").innerHTML = "";
+				document.getElementById("company").innerHTML = "";
+				document.getElementById("share_id").innerHTML = "";
+		}
+		else if (attr=="dmat_ac_no")
+		{
+				document.getElementById(attr).innerHTML = "<input type='text' name='dmat_ac_no'>&nbsp;&nbsp;<button>SUBMIT</button>";
+				document.getElementById("name").innerHTML = "";
+				document.getElementById("pan").innerHTML = "";
+				document.getElementById("company").innerHTML = "";
+				document.getElementById("share_id").innerHTML = "";
+		}
+		else if (attr=="pan")
+		{
+				document.getElementById(attr).innerHTML = "<input type='text' name='pan'>&nbsp;&nbsp;<button>SUBMIT</button>";
+				document.getElementById("dmat_ac_no").innerHTML = "";
+				document.getElementById("name").innerHTML = "";
+				document.getElementById("share_id").innerHTML = "";
+				document.getElementById("company").innerHTML = "";
+		}
+		else if (attr=="share_id")
+		{
+				document.getElementById(attr).innerHTML = "<input type='text' name='share_id'>&nbsp;&nbsp;<button>SUBMIT</button>";
+				document.getElementById("dmat_ac_no").innerHTML = "";
+				document.getElementById("pan").innerHTML = "";
+				document.getElementById("name").innerHTML = "";
+				document.getElementById("company").innerHTML = "";
+		}
+		else
+		{
+				document.getElementById(attr).innerHTML = "<input type='text' name='company'>&nbsp;&nbsp;<button>SUBMIT</button>";
+				document.getElementById("dmat_ac_no").innerHTML = "";
+				document.getElementById("pan").innerHTML = "";
+				document.getElementById("share_id").innerHTML = "";
+				document.getElementById("name").innerHTML = "";
+		}
+	}
+	</script>
+	</form>
+ </body>
+</html>
